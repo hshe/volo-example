@@ -1,0 +1,62 @@
+[package]
+name = "volo_example"
+version = "0.1.0"
+edition.workspace = true
+
+[workspace]
+members = ["volo-gen"]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+async-trait = "0.1"
+lazy_static = "1"
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"
+prost = "0.12.3"
+tracing-subscriber = "0.3"
+
+pilota = "*"
+volo =  "*"        # we recommend to use the latest framework version for new features and bug fixes
+volo-grpc =  "*"  # we recommend to use the latest framework version for new features and bug fixes
+
+volo-gen = { path = "./volo-gen" }
+
+[profile.release]
+opt-level = 3
+debug = true
+debug-assertions = false
+overflow-checks = false
+lto = true
+panic = 'unwind'
+incremental = false
+codegen-units = 1
+rpath = false
+
+
+[workspace.dependencies]
+# we recommend to use the latest framework version for new features and bug fixes
+volo = "*"
+volo-build = "*"
+volo-grpc = "*"
+pilota = "*"
+
+anyhow = "1"
+async-trait = "0.1"
+futures = "0.3"
+# tokio = "1"
+
+
+# client
+# anyhow = "1"
+# async-trait = "0.1"
+lazy_static = "1.4.0"
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"
+prost = "0.12.3"
+tracing-subscriber = "0.3"
