@@ -72,7 +72,7 @@ Status code distribution:
 ```
 
 
-## another Go FrameWork[include middleware-jwt]
+## another Go FrameWork[include middleware]
 * request
 ```
 ghz --insecure \
@@ -121,3 +121,5 @@ Status code distribution:
   [Canceled]      55 responses       
   [Unavailable]   9 responses 
 ```
+
+![alt text](image.png)
