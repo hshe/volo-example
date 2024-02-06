@@ -125,6 +125,6 @@ Status code distribution:
 ![alt text](image.png)
 
 
-### axum 24000Qps
-### kratos 17000Qps
-### volo 45000Qps
+### axum 240000 Qps
+### kratos 170000 Qps
+### volo 45000 Qps
