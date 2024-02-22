@@ -30,7 +30,6 @@ where
     }
 }
 
-
 pub struct LogLayer;
 
 // impl<S> volo::Layer<S> for LogLayer {
@@ -40,4 +39,3 @@ pub struct LogLayer;
 //         LogService(inner)
 //     }
 // }
-
